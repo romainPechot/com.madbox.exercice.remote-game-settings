@@ -37,4 +37,5 @@ I've used/"wasted" half a day to script a distribution processus that would extr
 ... which was to correctly setup my local repo so I could create a clean/valid github project for Unity's Package Manager, which also took me half a day.  
 But now I can quickly edit something inside the Unity project, commit and push to the package repo and update any project that use this module/repo :+1:  
 ~~Technically the "main project" repo (https://github.com/romainPechot/remote-game-settings) is not useable as is, but I don't really have a proper solution right now.~~  
-I've found a solution using git submodule.
+~~I've found a solution using `git submodule`.~~  
+I can't really make it work using `git submodule`.
