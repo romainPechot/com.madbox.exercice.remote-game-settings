@@ -23,6 +23,8 @@ namespace MadBox.Exercice.Editor
         {
             if (!EditorWindow.HasOpenInstances<GameSettingsViewer>())
             {
+                // For some reasons Unity generate a "failed" window every time this method is called on the first frame after the initialization.
+                // Delaying it one frame seems to fix the problem.
                 EditorApplication.delayCall += () =>
                 {
                     EditorWindow.GetWindow<GameSettingsViewer>();
