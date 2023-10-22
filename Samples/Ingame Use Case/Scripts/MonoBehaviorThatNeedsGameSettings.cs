@@ -13,6 +13,7 @@ namespace MadBox.Exercice
         {
             // Fetch the game settings.
             this.isFetching = true;
+            Debug.Log($"Fetching the game's settings...");
             GameSettingsManager.GetManager().GetGameSettings(this.OnGetGameSettingsSuccess, this.OnGetGameSettingsError);
         }
 
@@ -29,7 +30,7 @@ namespace MadBox.Exercice
                 entity.GetComponent<Renderer>().material.color = Random.ColorHSV();
             }
              
-            Debug.Log("<color=green>SUCCESS</color>");
+            Debug.Log("Successfully fetched the game's settings.");
         }
 
         private void OnGetGameSettingsError(string error)
@@ -38,7 +39,7 @@ namespace MadBox.Exercice
             this.success = false;
             GameObject entity = GameObject.CreatePrimitive(PrimitiveType.Capsule);
             entity.GetComponent<Renderer>().material.color = Color.red;
-            Debug.Log($"<color=red>ERROR: {error}</color>");
+            Debug.Log($"Error while fetching the game's settings; reason: {error}");
         }
 
         private void OnGUI()
@@ -47,11 +48,8 @@ namespace MadBox.Exercice
             {
                 this.statusLabelStyle = new GUIStyle(GUI.skin.label)
                 {
-                    //alignment = TextAnchor.MiddleCenter,
                     fontSize = 24,
                     fontStyle = FontStyle.Bold,
-                    //stretchWidth = true,
-                    //stretchHeight = true,
                 };
             }
 
@@ -64,7 +62,7 @@ namespace MadBox.Exercice
                 this.statusLabelContent.text = this.success ? "Success" : "Error";
             }
 
-            Rect statusLabelArea = GUILayoutUtility.GetRect(this.statusLabelContent, this.statusLabelStyle/*, GUILayout.ExpandWidth(true), GUILayout.ExpandHeight(true)*/);
+            Rect statusLabelArea = GUILayoutUtility.GetRect(this.statusLabelContent, this.statusLabelStyle);
             GUI.Label(statusLabelArea, this.statusLabelContent, this.statusLabelStyle);
         }
     }
