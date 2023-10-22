@@ -1,6 +1,6 @@
 {
     "name": "com.madbox.exercice.remote-game-settings",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "displayName": "Remote Game Settings",
     "description": "This is an exercice/example package for a remote game settings structure.",
     "unity": "2021.3",
