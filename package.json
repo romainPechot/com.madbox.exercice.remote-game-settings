@@ -8,7 +8,9 @@
     "documentationUrl": "https://achieved-mustang-b84.notion.site/Home-Assignment-Test-Materials-for-Romain-P-chot-74a82912a01d46848bffc5b000e45fbe",
     "changelogUrl": "https://achieved-mustang-b84.notion.site/Home-Assignment-Test-Materials-for-Romain-P-chot-74a82912a01d46848bffc5b000e45fbe",
     "licensesUrl": "https://achieved-mustang-b84.notion.site/Home-Assignment-Test-Materials-for-Romain-P-chot-74a82912a01d46848bffc5b000e45fbe",
-    "dependencies": {},
+    "dependencies": {
+      "com.unity.nuget.newtonsoft-json": "3.2.1"
+    },
    "keywords": [
       "madbox",
       "exercice",
