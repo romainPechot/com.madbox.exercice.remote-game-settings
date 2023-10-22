@@ -35,5 +35,6 @@ The whole processus should also generate logs to have a more detailed report.
 The whole coding took me one standard work day. There was nothing extremely new to me (which is a good thing).  
 I've used/"wasted" half a day to script a distribution processus that would extract the package folder from the Unity project but it was messy and didn't really solve my real problem...  
 ... which was to correctly setup my local repo so I could create a clean/valid github project for Unity's Package Manager, which also took me half a day.  
-But now I can quickly edit something inside the Unity project, commit and push to the package repo and update any project that use this module/repo :+1:
-Technically the "main project" repo (https://github.com/romainPechot/remote-game-settings) is not useable as is, but I don't really have a proper solution right now.
+But now I can quickly edit something inside the Unity project, commit and push to the package repo and update any project that use this module/repo :+1:  
+~~Technically the "main project" repo (https://github.com/romainPechot/remote-game-settings) is not useable as is, but I don't really have a proper solution right now.~~  
+I've found a solution using git submodule.
